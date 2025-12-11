@@ -278,19 +278,19 @@
             </li>
           </ul>
         </div>
-        <form class="contact-form" data-animate>
+        <form class="contact-form" id="contactForm" data-animate>
           <h3 data-i18n="contact_form_title">نموذج اهتمام</h3>
           <label>
             <span data-i18n="contact_form_name">الاسم / Name</span>
-            <input type="text" placeholder="اسمك الكامل / Your full name" />
+            <input id="fullName" type="text" placeholder="اسمك الكامل / Your full name" />
           </label>
           <label>
             <span data-i18n="contact_form_email">البريد الإلكتروني / Email</span>
-            <input type="email" placeholder="you@example.com" />
+            <input id="email" type="email" placeholder="you@example.com" />
           </label>
           <label>
             <span data-i18n="contact_form_role">أنا</span>
-            <select>
+            <select id="role">
               <option data-i18n="contact_form_role_option1">باحث عن عمل</option>
               <option data-i18n="contact_form_role_option2">شركة / جهة توظيف</option>
               <option data-i18n="contact_form_role_option3">معهد تدريب / شريك</option>
@@ -316,6 +316,22 @@
       </span>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    href="https://wa.me/966541331320"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>

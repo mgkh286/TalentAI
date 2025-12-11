@@ -209,3 +209,57 @@ const observer = new IntersectionObserver(
 );
 
 animatedEls.forEach((el) => observer.observe(el));
+
+/* WhatsApp integration for form */
+
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("fullName")?.value.trim() || "";
+    const email = document.getElementById("email")?.value.trim() || "";
+    const role = document.getElementById("role")?.value || "";
+
+    const phone = "966541331320";
+    let message = "";
+
+    if (currentLang === "ar") {
+      message =
+        `مرحباً، أرغب في معرفة المزيد عن منصة TalentAI (منصة توظيفي الذكية).\n` +
+        `الاسم: ${name}\n` +
+        `البريد الإلكتروني: ${email}\n` +
+        `أنا: ${role}`;
+    } else {
+      message =
+        `Hello, I am interested in the TalentAI (Tawdifi AI) platform.\n` +
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `I am: ${role}`;
+    }
+
+    const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, "_blank");
+  });
+}
+
+/* Back to top button */
+
+const backToTopBtn = document.getElementById("backToTop");
+
+if (backToTopBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add("show");
+    } else {
+      backToTopBtn.classList.remove("show");
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}

@@ -597,6 +597,68 @@ body {
   transform: translateY(0);
 }
 
+/* Floating WhatsApp */
+
+.whatsapp-float {
+  position: fixed;
+  inset-inline-end: 1.5rem;
+  bottom: 1.5rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  z-index: 60;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+    opacity var(--transition-fast), visibility var(--transition-fast);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.75);
+}
+
+/* Back to top */
+
+.back-to-top {
+  position: fixed;
+  inset-inline-end: 1.5rem;
+  bottom: 5.2rem; /* فوق الواتساب */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.85);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  z-index: 55;
+  transition: opacity var(--transition-fast), visibility var(--transition-fast),
+    transform var(--transition-fast), background var(--transition-fast);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
 /* Responsive */
 
 @media (max-width: 980px) {
@@ -662,5 +724,15 @@ body {
 
   .hero-text h1 {
     font-size: 1.9rem;
+  }
+
+  .whatsapp-float {
+    inset-inline-end: 1rem;
+    bottom: 1rem;
+  }
+
+  .back-to-top {
+    inset-inline-end: 1rem;
+    bottom: 4.6rem;
   }
 }
