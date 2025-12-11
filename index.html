@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TalentAI | منصة توظيفي الذكية بالذكاء الاصطناعي</title>
+
+  <!-- Fonts: Cairo (AR) + Montserrat (EN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating gradient circle for style -->
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo" data-animate>
+        <div class="logo-mark">
+          <span class="logo-icon">
+            <i class="fa-solid fa-circle-nodes"></i>
+          </span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">TalentAI</span>
+          <span class="logo-sub" data-i18n="logo_sub">
+            منصة توظيفي الذكية بالذكاء الاصطناعي
+          </span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about" data-i18n="nav_about">عن المنصة</a>
+        <a href="#features" data-i18n="nav_features">المزايا</a>
+        <a href="#workflow" data-i18n="nav_workflow">كيف تعمل</a>
+        <a href="#contact" data-i18n="nav_contact">انضم الآن</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="langToggle" class="btn-secondary">English</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text" data-animate>
+          <div class="pill-tag">
+            <i class="fa-solid fa-flag"></i>
+            <span data-i18n="hero_badge_1">متوافقة مع رؤية 2030</span>
+          </div>
+
+          <h1 data-i18n="hero_title">
+            منصة توظيف ذكية تدعم رؤية المملكة 2030
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            TalentAI تربط بين الباحثين عن عمل والشركات باستخدام الذكاء الاصطناعي، من تحليل السيرة الذاتية
+            إلى المقابلات الافتراضية، في منصة واحدة متكاملة.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary" data-i18n="hero_btn_primary">
+              <i class="fa-solid fa-rocket-launch"></i>
+              جرّب النسخة التجريبية
+            </a>
+            <a href="#features" class="btn-outline" data-i18n="hero_btn_secondary">
+              <i class="fa-solid fa-circle-info"></i>
+              استكشف المزايا
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <span data-i18n="hero_badge_2">
+              <i class="fa-solid fa-briefcase"></i>
+              دعم سوق العمل السعودي
+            </span>
+            <span>
+              <i class="fa-solid fa-user-check"></i>
+              Talent Score &amp; ATS
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-animate>
+          <div class="hero-illustration">
+            <img
+              src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="AI Recruitment Illustration"
+            />
+            <div class="hero-illustration-overlay"></div>
+          </div>
+
+          <div class="hero-float-card card glass">
+            <div class="card-icon">
+              <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+            <h3 data-i18n="hero_card_title">تحليل السيرة الذاتية</h3>
+            <p data-i18n="hero_card_body">
+              يقوم النظام بقراءة السيرة الذاتية، تقييم المهارات، وإعطاء درجة جاهزية وظيفية لكل متقدم.
+            </p>
+          </div>
+
+          <div class="hero-score card glass small">
+            <h4 data-i18n="hero_card_score_title">Talent Score</h4>
+            <div class="score-circle">
+              <span>87</span>
+              <small>/100</small>
+            </div>
+            <p data-i18n="hero_score_hint">
+              جاهزية عالية للتوظيف في وظائف إدارة المشاريع.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container section-inner two-cols">
+        <div data-animate>
+          <h2 data-i18n="about_title">نبذة عن المنصة</h2>
+          <p data-i18n="about_body_1">
+            منصة TalentAI / توظيفي الذكية هي منصة توظيف تعتمد على الذكاء الاصطناعي لتطوير تجربة التوظيف
+            بالكامل، من لحظة إنشاء السيرة الذاتية، مرورًا بالمقابلات الافتراضية، وحتى اختيار المرشح الأنسب للشركة.
+          </p>
+          <p data-i18n="about_body_2">
+            المنصة تدعم الباحثين عن عمل من خلال تقييم جاهزيتهم الوظيفية وتقديم توصيات تدريبية، كما تدعم
+            الشركات في الوصول السريع للمواهب المؤهلة، بما يتماشى مع مستهدفات رؤية المملكة 2030 في تمكين الكفاءات الوطنية.
+          </p>
+        </div>
+        <div class="about-list" data-animate>
+          <h3 data-i18n="about_highlights_title">ماذا تقدم المنصة؟</h3>
+          <ul>
+            <li data-i18n="about_highlights_1">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              تحليل ذكي للسيرة الذاتية واستخراج المهارات الأساسية.
+            </li>
+            <li data-i18n="about_highlights_2">
+              <i class="fa-solid fa-diagram-project"></i>
+              مطابقة دقيقة بين المتقدمين والوظائف باستخدام الذكاء الاصطناعي.
+            </li>
+            <li data-i18n="about_highlights_3">
+              <i class="fa-solid fa-video"></i>
+              مقابلات افتراضية مع تقييم للغة الجسد ونبرة الصوت.
+            </li>
+            <li data-i18n="about_highlights_4">
+              <i class="fa-solid fa-graduation-cap"></i>
+              ربط مع معاهد تدريب لتطوير المهارات المطلوبة في سوق العمل.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section alt">
+      <div class="container section-inner">
+        <h2 class="section-title" data-animate data-i18n="features_title">
+          المزايا الرئيسية
+        </h2>
+
+        <div class="cards-grid">
+          <div class="card feature-card" data-animate>
+            <div class="card-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3 data-i18n="features_ats_title">نظام ATS ذكي</h3>
+            <p data-i18n="features_ats_body">
+              نظام تتبّع وفرز للمتقدمين يقرأ السير الذاتية، يحولها إلى بيانات، ويقارنها بمتطلبات الوظيفة
+              لترتيب أفضل المرشحين بشكل دقيق.
+            </p>
+          </div>
+          <div class="card feature-card" data-animate>
+            <div class="card-icon">
+              <i class="fa-solid fa-file-pen"></i>
+            </div>
+            <h3 data-i18n="features_cv_title">منشئ سيرة ذاتية احترافي</h3>
+            <p data-i18n="features_cv_body">
+              يساعد الباحث عن عمل على إنشاء سيرة ذاتية متوافقة مع نظام ATS وبصياغة احترافية باللغتين.
+            </p>
+          </div>
+          <div class="card feature-card" data-animate>
+            <div class="card-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 data-i18n="features_ai_interview_title">مقابلات افتراضية بالذكاء الاصطناعي</h3>
+            <p data-i18n="features_ai_interview_body">
+              إجراء مقابلات مرئية وتحليل نبرة الصوت، الثقة، والمهارات السلوكية لإعطاء تقييم شامل للمرشح.
+            </p>
+          </div>
+          <div class="card feature-card" data-animate>
+            <div class="card-icon">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <h3 data-i18n="features_training_title">تدريب وتطوير مهاري</h3>
+            <p data-i18n="features_training_body">
+              ربط مباشر مع معاهد تدريب، مع توصيات مخصّصة لكل مرشح بناءً على فجوة المهارات لديه.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="section">
+      <div class="container section-inner">
+        <h2 class="section-title" data-animate data-i18n="workflow_title">
+          كيف تعمل المنصة؟
+        </h2>
+        <div class="steps">
+          <div class="step" data-animate>
+            <span class="step-number">1</span>
+            <h3 data-i18n="workflow_step1_title">تسجيل وبناء الملف المهني</h3>
+            <p data-i18n="workflow_step1_body">
+              يقوم الباحث عن عمل بإنشاء حساب وإدخال بياناته الأساسية ورفع السيرة الذاتية لتحليلها.
+            </p>
+          </div>
+          <div class="step" data-animate>
+            <span class="step-number">2</span>
+            <h3 data-i18n="workflow_step2_title">تحليل السيرة وتقييم الجاهزية</h3>
+            <p data-i18n="workflow_step2_body">
+              يتم تحليل السيرة الذاتية وتوليد درجة جاهزية وظيفية Talent Score مع توصيات تطوير.
+            </p>
+          </div>
+          <div class="step" data-animate>
+            <span class="step-number">3</span>
+            <h3 data-i18n="workflow_step3_title">المطابقة الذكية مع الوظائف</h3>
+            <p data-i18n="workflow_step3_body">
+              تعرض المنصة وظائف متناسبة مع مهارات المرشح، وتسهّل على الشركة اختيار أفضل المرشحين.
+            </p>
+          </div>
+          <div class="step" data-animate>
+            <span class="step-number">4</span>
+            <h3 data-i18n="workflow_step4_title">مقابلات وتوظيف</h3>
+            <p data-i18n="workflow_step4_body">
+              يمكن إجراء المقابلات عبر المنصة، ثم المضي قدمًا في التوظيف أو تقديم خطة تطوير إضافية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="section alt">
+      <div class="container section-inner contact-grid">
+        <div data-animate>
+          <h2 data-i18n="contact_title">انضم كشركة أو باحث عن عمل</h2>
+          <p data-i18n="contact_body">
+            هذه الصفحة نموذج أولي لفكرة المنصة في هاكاثون طويق. يمكن تطويرها لتصبح منصة كاملة للتوظيف الذكي
+            بالذكاء الاصطناعي، تدعم الشركات والباحثين عن عمل والمعاهد التدريبية.
+          </p>
+          <ul class="contact-list">
+            <li data-i18n="contact_item_1">
+              <i class="fa-solid fa-circle-check"></i>
+              تجربة مجانية للشركات والباحثين عن عمل في المرحلة التجريبية.
+            </li>
+            <li data-i18n="contact_item_2">
+              <i class="fa-solid fa-link"></i>
+              إمكانية ربط المنصة مع أنظمة الشركات والمعاهد التدريبية.
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" data-animate>
+          <h3 data-i18n="contact_form_title">نموذج اهتمام</h3>
+          <label>
+            <span data-i18n="contact_form_name">الاسم / Name</span>
+            <input type="text" placeholder="اسمك الكامل / Your full name" />
+          </label>
+          <label>
+            <span data-i18n="contact_form_email">البريد الإلكتروني / Email</span>
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            <span data-i18n="contact_form_role">أنا</span>
+            <select>
+              <option data-i18n="contact_form_role_option1">باحث عن عمل</option>
+              <option data-i18n="contact_form_role_option2">شركة / جهة توظيف</option>
+              <option data-i18n="contact_form_role_option3">معهد تدريب / شريك</option>
+            </select>
+          </label>
+          <button type="submit" class="btn-primary" data-i18n="contact_form_btn">
+            <i class="fa-solid fa-paper-plane"></i>
+            إرسال (نموذج تجريبي)
+          </button>
+          <p class="form-note" data-i18n="contact_form_note">
+            هذا النموذج تجريبي لعرض الفكرة في الهاكاثون، ويمكن ربطه لاحقًا بقاعدة بيانات وواجهة برمجية.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> TalentAI</span>
+      <span data-i18n="footer_text">
+        منصة توظيفي الذكية – نموذج أولي لمشروع هاكاثون طويق
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
